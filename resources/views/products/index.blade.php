@@ -11,7 +11,10 @@
     <a href="/create">Criar produto</a>
     <ul>
         @foreach($products as $item)
-            <li>{{$item->name}}</li>
+            <li>
+                <a href="/show/{{$item->id}}">
+                {{$item->name}}
+            </li>
         @endforeach
     </ul>
 </body>
